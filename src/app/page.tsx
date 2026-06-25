@@ -62,6 +62,39 @@ export default function Home() {
             <a href="https://luminapet.mycartpanda.com/checkout/211202742:1" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Garantir com Frete Grátis</a>
           </div>
         </div>
+
+        {/* Produto B: Nacional (Bebedouro Fonte) */}
+        <div className="card-soft" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', padding: '60px', alignItems: 'center', marginTop: '60px' }}>
+          <div>
+            <div style={{ color: 'var(--accent-sage)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px', fontSize: '0.875rem' }}>Entrega Rápida BR</div>
+            <h2 style={{ fontSize: '3rem', marginBottom: '24px' }}>Aqua <span style={{ fontStyle: 'italic', color: 'var(--accent-terracotta)' }}>Flow</span></h2>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '32px', fontSize: '1.1rem', lineHeight: 1.6 }}>
+              A fonte de água contínua que incentiva o seu pet a beber mais. Motor ultra-silencioso, filtragem tripla e entrega expressa para todo o Brasil.
+            </p>
+            
+            <ul style={{ listStyle: 'none', marginBottom: '40px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Filtragem de Carvão Ativado
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> 2 Litros de Capacidade
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontWeight: 500 }}>
+                <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Estoque no Brasil (Chega Rápido)
+              </li>
+            </ul>
+
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '16px', marginBottom: '32px' }}>
+              <span style={{ fontSize: '2.5rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 149,90</span>
+              <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)' }}>R$ 220,00</span>
+            </div>
+            {/* O link abaixo será substituído quando o usuário criar o Produto B no Cartpanda */}
+            <a href="#" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-sage)', color: 'white' }}>Comprar Aqua Flow (Estoque BR)</a>
+          </div>
+          <div style={{ background: 'var(--bg-secondary)', borderRadius: '24px', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ color: 'var(--text-muted)' }}>[ Foto da Fonte de Água Pet ]</span>
+          </div>
+        </div>
       </section>
 
     </div>
