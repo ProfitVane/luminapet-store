@@ -25,6 +25,19 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  
+  /* Anti-copy protections */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Make sure images are definitely not draggable */
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 /* Typography */

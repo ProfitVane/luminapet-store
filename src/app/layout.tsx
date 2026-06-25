@@ -4,7 +4,37 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "LuminaPet | Cuidado e Inovação para quem você ama",
   description: "Acessórios inteligentes e premium para o bem-estar do seu pet. Inovação com carinho e segurança.",
+  authors: [{ name: "LuminaPet" }],
+  publisher: "LuminaPet",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
 };
+
+const antiCopyScript = `
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('keydown', event => {
+    if (event.keyCode === 123) { // F12
+      event.preventDefault();
+    }
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 73) { // Ctrl+Shift+I
+      event.preventDefault();
+    }
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 74) { // Ctrl+Shift+J
+      event.preventDefault();
+    }
+    if (event.ctrlKey && event.keyCode === 85) { // Ctrl+U
+      event.preventDefault();
+    }
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 67) { // Ctrl+Shift+C
+      event.preventDefault();
+    }
+  });
+  console.log("%cStop!", "color: red; font-family: sans-serif; font-size: 4em; font-weight: bolder; text-shadow: #000 1px 1px;");
+  console.log("%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable a feature or 'hack' someone's account, it is a scam.", "font-size: 1.5em;");
+`;
 
 export default function RootLayout({
   children,
@@ -29,6 +59,7 @@ export default function RootLayout({
         <main style={{ paddingTop: '90px' }}>
           {children}
         </main>
+        <script dangerouslySetInnerHTML={{ __html: antiCopyScript }} />
       </body>
     </html>
   );
