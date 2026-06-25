@@ -117,6 +117,9 @@ export default function Home() {
           <div className="card-soft" style={{ padding: '40px', background: 'linear-gradient(135deg, #fdf2f8, #fce7f3)', textAlign: 'center' }}>
             <div style={{ display: 'inline-block', padding: '6px 14px', background: '#fbcfe8', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600, color: '#be185d', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>🐾 Suporte Premium</div>
             <h3 style={{ fontSize: '1.6rem', marginBottom: '12px' }}>Cata Caca <span style={{ color: '#be185d' }}>Rosé</span></h3>
+            <div style={{ width: '100%', height: '250px', marginBottom: '24px', overflow: 'hidden', borderRadius: '16px', background: 'white' }}>
+              <img src="/images/cata-caca.png" alt="Cata Caca Rosé" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '24px' }}>
               Design elegante com clipe para prender na guia + 15 saquinhos inclusos. Porque até na hora de limpar, a Lumina é diferente.
             </p>
@@ -130,6 +133,9 @@ export default function Home() {
           <div className="card-soft" style={{ padding: '40px', background: 'linear-gradient(135deg, #ecfdf5, #d1fae5)', textAlign: 'center' }}>
             <div style={{ display: 'inline-block', padding: '6px 14px', background: '#a7f3d0', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600, color: '#065f46', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>🌿 Eco-Friendly • 4.8★</div>
             <h3 style={{ fontSize: '1.6rem', marginBottom: '12px' }}>Refil Nature <span style={{ color: '#065f46' }}>Biodegradável</span></h3>
+            <div style={{ width: '100%', height: '250px', marginBottom: '24px', overflow: 'hidden', borderRadius: '16px', background: 'white' }}>
+              <img src="/images/refil.png" alt="Refil Nature Biodegradável" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '24px' }}>
               4 rolos de saquinhos 100% biodegradáveis. Compatível com qualquer suporte. Cuide do seu pet e do planeta.
             </p>
