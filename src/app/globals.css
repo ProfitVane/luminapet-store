@@ -20,6 +20,7 @@
 
 body {
   background: var(--bg-color);
+  background-image: radial-gradient(circle at 50% 0%, rgba(155, 175, 155, 0.1) 0%, transparent 70%);
   color: var(--text-main);
   font-family: 'Outfit', sans-serif;
   min-height: 100vh;
@@ -53,6 +54,14 @@ h1, h2, h3, h4 {
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-soft);
   border-radius: 24px;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.card-soft:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.12);
+  border-color: rgba(155, 175, 155, 0.4);
 }
 
 /* Buttons */
@@ -116,10 +125,11 @@ h1, h2, h3, h4 {
 
 /* Navbar */
 .nav-clean {
-  background: rgba(253, 252, 249, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-soft);
+  background: rgba(253, 252, 249, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
 /* Animations */
@@ -130,6 +140,46 @@ h1, h2, h3, h4 {
 
 .animate-fade-in {
   animation: fadeInUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Image Zoom Effect */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-target {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-soft:hover .img-zoom-target {
+  transform: scale(1.05);
+}
+
+/* Text Gradient */
+.text-gradient-sage {
+  background: linear-gradient(135deg, var(--accent-sage), #7a947a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-gradient-terracotta {
+  background: linear-gradient(135deg, var(--accent-terracotta), #c07559);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 /* Custom Scrollbar */
