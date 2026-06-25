@@ -83,7 +83,7 @@ export default function Home() {
                 <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Filtragem Tripla de Carvão Ativado
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontWeight: 500 }}>
-                <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Motor Ultra-Silencioso (< 40dB)
+                <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Motor Ultra-Silencioso (Menos de 40dB)
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontWeight: 500 }}>
                 <span style={{ color: 'var(--accent-terracotta)' }}>✓</span> Previne Doenças Renais
