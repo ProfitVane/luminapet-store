@@ -189,10 +189,10 @@ export default function Home() {
           <div>
             <h4 style={{ fontSize: '1.2rem', marginBottom: '24px', color: 'var(--text-main)' }}>Institucional</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <li><a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Nossa História</a></li>
-              <li><a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Política de Privacidade</a></li>
-              <li><a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Termos de Serviço</a></li>
-              <li><a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Rastrear Pedido</a></li>
+              <li><a href="/nossa-historia" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Nossa História</a></li>
+              <li><a href="/politica-privacidade" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Política de Privacidade</a></li>
+              <li><a href="/termos-servico" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Termos de Serviço</a></li>
+              <li><a href="/rastrear-pedido" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Rastrear Pedido</a></li>
             </ul>
           </div>
           <div>
