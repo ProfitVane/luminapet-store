@@ -106,19 +106,38 @@ export default function Home() {
 
       </section>
 
-      {/* Upsell Banner: Cata Caca Rose */}
+      {/* Upsell: Kit Passeio */}
       <section className="container animate-fade-in" style={{ animationDelay: '0.3s' }}>
-        <div className="card-soft" style={{ padding: '48px 60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '40px', background: 'linear-gradient(135deg, #fdf2f8, #fce7f3)' }}>
-          <div>
-            <div style={{ display: 'inline-block', padding: '6px 14px', background: '#fbcfe8', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600, color: '#be185d', marginBottom: '12px', letterSpacing: '1px', textTransform: 'uppercase' }}>🐾 Oferta Especial de Passeio</div>
-            <h3 style={{ fontSize: '1.8rem', marginBottom: '12px' }}>Lumina Cata Caca <span style={{ color: '#be185d' }}>Rosé</span></h3>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1rem', maxWidth: '500px' }}>
-              Design elegante + 15 saquinhos biodegradáveis inclusos. Porque até na hora de limpar, a Lumina é diferente.
+        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '12px' }}>Kit <span style={{ fontStyle: 'italic', color: '#be185d' }}>Passeio Consciente</span></h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>Acessórios elegantes e sustentáveis para o passeio do seu pet.</p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
+          {/* Cata Caca Rose */}
+          <div className="card-soft" style={{ padding: '40px', background: 'linear-gradient(135deg, #fdf2f8, #fce7f3)', textAlign: 'center' }}>
+            <div style={{ display: 'inline-block', padding: '6px 14px', background: '#fbcfe8', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600, color: '#be185d', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>🐾 Suporte Premium</div>
+            <h3 style={{ fontSize: '1.6rem', marginBottom: '12px' }}>Cata Caca <span style={{ color: '#be185d' }}>Rosé</span></h3>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '24px' }}>
+              Design elegante com clipe para prender na guia + 15 saquinhos inclusos. Porque até na hora de limpar, a Lumina é diferente.
             </p>
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '12px', marginBottom: '24px' }}>
+              <span style={{ fontSize: '2rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 39,90</span>
+              <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '0.9rem' }}>R$ 59,90</span>
+            </div>
+            <a href="#" className="btn-primary" style={{ padding: '14px 32px', textDecoration: 'none', display: 'inline-block' }}>Quero o Suporte</a>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
-            <span style={{ fontSize: '2rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 39,90</span>
-            <a href="#" className="btn-primary" style={{ padding: '14px 32px', textDecoration: 'none', whiteSpace: 'nowrap' }}>Adicionar ao Pedido</a>
+          {/* Refil Nature Biodegradável */}
+          <div className="card-soft" style={{ padding: '40px', background: 'linear-gradient(135deg, #ecfdf5, #d1fae5)', textAlign: 'center' }}>
+            <div style={{ display: 'inline-block', padding: '6px 14px', background: '#a7f3d0', borderRadius: '100px', fontSize: '0.75rem', fontWeight: 600, color: '#065f46', marginBottom: '16px', letterSpacing: '1px', textTransform: 'uppercase' }}>🌿 Eco-Friendly • 4.8★</div>
+            <h3 style={{ fontSize: '1.6rem', marginBottom: '12px' }}>Refil Nature <span style={{ color: '#065f46' }}>Biodegradável</span></h3>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '24px' }}>
+              4 rolos de saquinhos 100% biodegradáveis. Compatível com qualquer suporte. Cuide do seu pet e do planeta.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: '12px', marginBottom: '24px' }}>
+              <span style={{ fontSize: '2rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 29,90</span>
+              <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '0.9rem' }}>R$ 44,90</span>
+            </div>
+            <a href="#" className="btn-primary" style={{ padding: '14px 32px', textDecoration: 'none', display: 'inline-block', background: '#065f46', color: 'white' }}>Quero o Refil</a>
           </div>
         </div>
       </section>
