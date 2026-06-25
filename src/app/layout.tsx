@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "LuminaPet | Cuidado e Inovação para quem você ama",
@@ -46,9 +47,9 @@ export default function RootLayout({
       <body>
         <nav className="nav-clean" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 50, padding: '20px 0' }}>
           <div className="container flex-between">
-            <div style={{ fontSize: '1.75rem', fontFamily: 'Playfair Display, serif', fontWeight: 700, color: 'var(--accent-terracotta)' }}>
+            <a href="/" style={{ fontSize: '1.75rem', fontFamily: 'Playfair Display, serif', fontWeight: 700, color: 'var(--accent-terracotta)', textDecoration: 'none' }}>
               Lumina<span style={{ color: 'var(--text-main)' }}>Pet.</span>
-            </div>
+            </a>
             <div style={{ display: 'flex', gap: '32px', fontWeight: 400, color: 'var(--text-main)', fontSize: '1.05rem' }}>
               <a href="#produtos" style={{ color: 'inherit', textDecoration: 'none' }}>Nossa Seleção</a>
               <a href="#beneficios" style={{ color: 'inherit', textDecoration: 'none' }}>Por que a Lumina?</a>
@@ -59,6 +60,7 @@ export default function RootLayout({
         <main style={{ paddingTop: '90px' }}>
           {children}
         </main>
+        <CookieBanner />
         <script dangerouslySetInnerHTML={{ __html: antiCopyScript }} />
       </body>
     </html>

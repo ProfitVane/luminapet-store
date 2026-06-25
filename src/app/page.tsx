@@ -74,7 +74,7 @@ export default function Home() {
               <span style={{ fontSize: '2.8rem', fontWeight: 700, fontFamily: 'Playfair Display', letterSpacing: '-1px' }}>R$ 119,90</span>
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '1.2rem' }}>R$ 189,90</span>
             </div>
-            <a href="#" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', fontSize: '1.1rem' }}>Quero a Minha Steam Brush</a>
+            <a href="#link-checkout-steam-brush-aqui" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', fontSize: '1.1rem' }}>Quero a Minha Steam Brush</a>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ export default function Home() {
               <span style={{ fontSize: '2.8rem', fontWeight: 700, fontFamily: 'Playfair Display', letterSpacing: '-1px' }}>R$ 49,90</span>
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '1.2rem' }}>R$ 79,90</span>
             </div>
-            <a href="#" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-terracotta)', color: 'white', fontSize: '1.1rem' }}>Quero o LickiMat</a>
+            <a href="#link-checkout-lickimat-aqui" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-terracotta)', color: 'white', fontSize: '1.1rem' }}>Quero o LickiMat</a>
           </div>
           <div className="img-zoom-container" style={{ borderRadius: '24px', height: '550px' }}>
             <img src="/images/lickimat.png" className="img-zoom-target" alt="Lumina LickiMat — Comedouro Interativo" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }} />
@@ -133,7 +133,7 @@ export default function Home() {
               <span style={{ fontSize: '2.5rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 39,90</span>
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '1.1rem' }}>R$ 59,90</span>
             </div>
-            <a href="#" className="btn-primary" style={{ padding: '16px 40px', textDecoration: 'none', display: 'inline-block' }}>Quero o Suporte</a>
+            <a href="#link-checkout-suporte-aqui" className="btn-primary" style={{ padding: '16px 40px', textDecoration: 'none', display: 'inline-block' }}>Quero o Suporte</a>
           </div>
           {/* Refil Nature Biodegradável */}
           <div className="card-soft" style={{ padding: '50px', background: 'linear-gradient(135deg, #ecfdf5, #d1fae5)', textAlign: 'center' }}>
@@ -149,7 +149,7 @@ export default function Home() {
               <span style={{ fontSize: '2.5rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 29,90</span>
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)', fontSize: '1.1rem' }}>R$ 44,90</span>
             </div>
-            <a href="#" className="btn-primary" style={{ padding: '16px 40px', textDecoration: 'none', display: 'inline-block', background: '#065f46', color: 'white' }}>Quero o Refil</a>
+            <a href="#link-checkout-refil-aqui" className="btn-primary" style={{ padding: '16px 40px', textDecoration: 'none', display: 'inline-block', background: '#065f46', color: 'white' }}>Quero o Refil</a>
           </div>
         </div>
       </section>
@@ -297,9 +297,9 @@ export default function Home() {
           <div>
             <h4 style={{ fontSize: '1.2rem', marginBottom: '24px', color: 'var(--text-main)' }}>Atendimento</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <li style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>Dúvidas Frequentes (FAQ)</li>
+              <li><a href="/faq" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '1.05rem', transition: 'color 0.3s' }}>Dúvidas Frequentes (FAQ)</a></li>
               <li style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>De segunda a sexta, 9h às 18h</li>
-              <li><a href="#" style={{ color: 'var(--accent-sage)', fontWeight: 600, textDecoration: 'none', fontSize: '1.05rem' }}>Fale no WhatsApp</a></li>
+              <li><a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20LuminaPet!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida..." target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-sage)', fontWeight: 600, textDecoration: 'none', fontSize: '1.05rem' }}>Fale no WhatsApp</a></li>
               <li><a href="mailto:contato@luminapet.com.br" style={{ color: 'var(--accent-terracotta)', fontWeight: 600, textDecoration: 'none', fontSize: '1.05rem' }}>contato@luminapet.com.br</a></li>
             </ul>
           </div>
