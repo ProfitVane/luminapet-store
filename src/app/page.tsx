@@ -59,7 +59,7 @@ export default function Home() {
               <span style={{ fontSize: '2.5rem', fontWeight: 700, fontFamily: 'Playfair Display' }}>R$ 299,90</span>
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)' }}>R$ 450,00</span>
             </div>
-            <button className="btn-primary" style={{ width: '100%', padding: '20px' }}>Garantir com Frete Grátis</button>
+            <a href="https://luminapet.mycartpanda.com/checkout/211202742:1" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none' }}>Garantir com Frete Grátis</a>
           </div>
         </div>
       </section>
