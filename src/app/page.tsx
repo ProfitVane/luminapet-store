@@ -89,7 +89,7 @@ export default function Home() {
               <span style={{ textDecoration: 'line-through', color: 'var(--text-muted)' }}>R$ 220,00</span>
             </div>
             {/* O link abaixo será substituído quando o usuário criar o Produto B no Cartpanda */}
-            <a href="#" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-sage)', color: 'white' }}>Comprar Aqua Flow (Estoque BR)</a>
+            <a href="https://luminapet.mycartpanda.com/checkout/211202848:1" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-sage)', color: 'white' }}>Comprar Aqua Flow (Estoque BR)</a>
           </div>
           <div style={{ background: 'var(--bg-secondary)', borderRadius: '24px', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'var(--text-muted)' }}>[ Foto da Fonte de Água Pet ]</span>
