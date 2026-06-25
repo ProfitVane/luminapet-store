@@ -23,9 +23,8 @@ export default function Home() {
           </div>
         </div>
         <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
-           {/* Placeholder para uma imagem aconchegante de um gato ou cachorro usando o produto numa sala iluminada */}
-           <div style={{ width: '100%', paddingBottom: '100%', background: 'var(--bg-secondary)', borderRadius: '50%', position: 'relative', overflow: 'hidden' }}>
-             <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'var(--text-muted)' }}>[ Foto Afetiva UGC ]</div>
+           <div style={{ width: '100%', paddingBottom: '100%', borderRadius: '50%', position: 'relative', overflow: 'hidden' }}>
+             <img src="/images/hero-lifestyle.png" alt="Dona feliz cuidando do pet com LuminaPet" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
            </div>
         </div>
       </section>
@@ -33,8 +32,8 @@ export default function Home() {
       {/* Featured Product */}
       <section id="produtos" className="container animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <div className="card-soft" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', padding: '60px', alignItems: 'center' }}>
-          <div style={{ background: 'var(--bg-secondary)', borderRadius: '24px', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: 'var(--text-muted)' }}>[ Foto do Produto em Fundo Claro ]</span>
+          <div style={{ borderRadius: '24px', height: '500px', overflow: 'hidden' }}>
+            <img src="/images/feeder-pro.png" alt="Lumina Feeder Pro - Comedouro Inteligente com Câmera" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }} />
           </div>
           <div>
             <div style={{ color: 'var(--accent-terracotta)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px', fontSize: '0.875rem' }}>Exclusividade</div>
@@ -91,8 +90,8 @@ export default function Home() {
             {/* O link abaixo será substituído quando o usuário criar o Produto B no Cartpanda */}
             <a href="https://luminapet.mycartpanda.com/checkout/211202848:1" className="btn-primary" style={{ width: '100%', padding: '20px', display: 'block', textAlign: 'center', textDecoration: 'none', background: 'var(--accent-sage)', color: 'white' }}>Comprar Aqua Flow (Estoque BR)</a>
           </div>
-          <div style={{ background: 'var(--bg-secondary)', borderRadius: '24px', height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <span style={{ color: 'var(--text-muted)' }}>[ Foto da Fonte de Água Pet ]</span>
+          <div style={{ borderRadius: '24px', height: '500px', overflow: 'hidden' }}>
+            <img src="/images/aqua-flow.png" alt="Lumina Aqua Flow - Fonte de Água Premium para Pets" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }} />
           </div>
         </div>
       </section>
